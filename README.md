@@ -4,7 +4,7 @@
 <h1 align="center">A warm welcome to my Github profile!</h1>
 <div style="text-align: justify;">
   <p style="margin: 0;">
-    👋 Hi there! I'm Aarush Narang, a passionate developer with a knack for crafting efficient and scalable solutions. Dive into my projects and let's innovate together!
+    👋 Hi there! I'm Aarush Narang, a passionate GenAI-Software Engineer with a knack for crafting efficient and scalable solutions. Dive into my projects and let's innovate together!
   </p>
 </div>
 <br>
