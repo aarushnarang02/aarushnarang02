@@ -78,7 +78,7 @@ def logo_tile(name, x, y, size):
 def moon_svg(x, y, r):
     """The portfolio's hero moon: a real lunar photo clipped to a disc with a
     soft cool halo. Photo: Gregory H. Revera, CC BY-SA 3.0 (credited in the
-    banner). Embedded as base64 because README SVGs cannot load URLs."""
+    SVG's <desc>). Embedded as base64 because README SVGs cannot load URLs."""
     import base64
     b64 = base64.b64encode((LOGOS / "moon.jpg").read_bytes()).decode()
     o = r * 0.04  # slight overscan so the photo edge meets the clip cleanly
@@ -94,7 +94,7 @@ def moon_svg(x, y, r):
       <image x="{x-r-o:.1f}" y="{y-r-o:.1f}" width="{2*(r+o):.1f}" height="{2*(r+o):.1f}" href="data:image/jpeg;base64,{b64}"/>
       <circle cx="{x}" cy="{y}" r="{r}" fill="url(#moonLimb)"/>
     </g>
-    <text x="{x}" y="{y + r + 30:.0f}" text-anchor="middle" font-family="{MONO}" font-size="8.5" fill="{MUTED}" fill-opacity="0.55">Moon · G. H. Revera · CC BY-SA 3.0</text>'''
+    <desc>Moon photo: Gregory H. Revera, CC BY-SA 3.0</desc>'''
 
 
 # --------------------------------------------------------------------------- hero
