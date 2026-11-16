@@ -47,9 +47,38 @@ def starfield(rng, w, h, n, twinkle_ratio=0.25):
     return "\n    ".join(out)
 
 
+LOGOS = Path(__file__).resolve().parent.parent / "assets" / "logos"
+
+
+def logo_tile(name, x, y, size):
+    """Logo drawn inside a white tile. External images never load inside a
+    README SVG, so the Amazon mark is inlined as a vector and the Biosphere 2
+    mark as base64 PNG."""
+    import base64, re
+    pad = size * 0.16
+    inner = size - 2 * pad
+    if name == "amazon":
+        d = re.search(r' d="([^"]+)"', (LOGOS / "amazon.svg").read_text()).group(1)
+        k = inner / 24
+        # one path in the source: split it so the letter is ink and the smile is orange
+        return (
+            f'<clipPath id="amzTop"><rect x="0" y="0" width="24" height="16.9"/></clipPath>'
+            f'<clipPath id="amzBot"><rect x="0" y="16.9" width="24" height="8"/></clipPath>'
+            f'<g transform="translate({x+pad:.1f},{y+pad:.1f}) scale({k:.4f})">'
+            f'<path d="{d}" fill="#232f3e" clip-path="url(#amzTop)"/>'
+            f'<path d="{d}" fill="#ff9900" clip-path="url(#amzBot)"/></g>'
+        )
+    b64 = base64.b64encode((LOGOS / f"{name}.png").read_bytes()).decode()
+    return (
+        f'<image x="{x+pad:.1f}" y="{y+pad:.1f}" width="{inner:.1f}" height="{inner:.1f}" '
+        f'preserveAspectRatio="xMidYMid meet" href="data:image/png;base64,{b64}"/>'
+    )
+
+
 # --------------------------------------------------------------------------- hero
 def hero():
-    W, H = 1200, 360
+    W, H = 1200, 432
+    hl_y, chip_y = 292, 374
     rng = random.Random(7)
     stars = starfield(rng, W, H, 170)
 
@@ -141,10 +170,32 @@ def hero():
     for c in chips:
         tw = len(c) * 7.3
         chip_svg.append(
-            f'<rect x="{cx}" y="300" width="{tw+26:.1f}" height="30" rx="15" fill="{BG_ALT}" fill-opacity="0.7" stroke="{BORDER}"/>'
-            f'<text x="{cx+13}" y="320" textLength="{tw:.1f}" lengthAdjust="spacingAndGlyphs" font-family="{BODY}" font-size="13" fill="{TEXT}">{esc(c)}</text>'
+            f'<rect x="{cx}" y="{chip_y}" width="{tw+26:.1f}" height="30" rx="15" fill="{BG_ALT}" fill-opacity="0.7" stroke="{BORDER}"/>'
+            f'<text x="{cx+13}" y="{chip_y+20}" textLength="{tw:.1f}" lengthAdjust="spacingAndGlyphs" font-family="{BODY}" font-size="13" fill="{TEXT}">{esc(c)}</text>'
         )
         cx += tw + 26 + 10
+
+    # Current highlights, each with its organisation's logo on a light tile.
+    highlights = [
+        ("amazon", "Amazon · Eller Immersion Project", "Weather driven delivery capacity forecasting"),
+        ("biosphere2", "Biosphere 2 · AI/ML & Software Engineer", "Sensor data quality and edge telemetry"),
+    ]
+    hx, hl_svg = 64, []
+    for i, (logo, title, sub) in enumerate(highlights):
+        tw_t, tw_s = len(title) * 8.1, len(sub) * 6.6
+        cw_ = 66 + max(tw_t, tw_s) + 78
+        hl_svg.append(
+            f'<g class="rise" style="animation-delay:{0.25 + i*0.15:.2f}s">'
+            f'<rect x="{hx}" y="{hl_y}" width="{cw_:.1f}" height="60" rx="14" fill="{BG_ALT}" fill-opacity="0.82" stroke="url(#hlStroke)"/>'
+            f'<rect x="{hx+9}" y="{hl_y+9}" width="42" height="42" rx="10" fill="#ffffff"/>'
+            f'{logo_tile(logo, hx+9, hl_y+9, 42)}'
+            f'<text x="{hx+64}" y="{hl_y+26}" textLength="{tw_t:.1f}" lengthAdjust="spacingAndGlyphs" font-family="{DISPLAY}" font-size="15" font-weight="600" fill="{HEADING}">{esc(title)}</text>'
+            f'<text x="{hx+64}" y="{hl_y+45}" textLength="{tw_s:.1f}" lengthAdjust="spacingAndGlyphs" font-family="{BODY}" font-size="12" fill="{MUTED}">{esc(sub)}</text>'
+            f'<circle cx="{hx+cw_-56:.1f}" cy="{hl_y+30}" r="3.5" fill="#34d399" class="live"/>'
+            f'<text x="{hx+cw_-47:.1f}" y="{hl_y+34}" font-family="{MONO}" font-size="10.5" letter-spacing="1.5" fill="#34d399">NOW</text>'
+            f'</g>'
+        )
+        hx += cw_ + 14
 
     svg = f'''<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" role="img" aria-label="Aarush Narang, Data Scientist and ML Engineer">
   <title>Aarush Narang · Data Scientist &amp; ML Engineer</title>
@@ -155,6 +206,7 @@ def hero():
     <linearGradient id="accentGrad" x1="0" x2="1"><stop offset="0" stop-color="{ACCENT}"/><stop offset="1" stop-color="{INDIGO}"/></linearGradient>
     <linearGradient id="shoot" x1="0" x2="1"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#fff" stop-opacity="0.9"/></linearGradient>
     <filter id="glow" x="-200%" y="-200%" width="500%" height="500%"><feGaussianBlur stdDeviation="2.2" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <linearGradient id="hlStroke" x1="0" x2="1"><stop offset="0" stop-color="{ACCENT}" stop-opacity="0.55"/><stop offset="1" stop-color="{BORDER}"/></linearGradient>
     <clipPath id="frame"><rect width="{W}" height="{H}" rx="20"/></clipPath>
     {''.join(clips)}
   </defs>
@@ -168,7 +220,9 @@ def hero():
     .blink {{ animation: blink 1s steps(1) infinite; }}
     @keyframes blink {{ 50% {{ opacity: 0 }} }}
     .rise {{ animation: rise 1.1s cubic-bezier(.22,1,.36,1) both; }}
-    @keyframes rise {{ from {{ opacity: 0; transform: translateY(14px) }} to {{ opacity: 1; transform: none }} }}
+    @keyframes rise {{ from {{ transform: translateY(14px) }} to {{ transform: none }} }}
+    .live {{ animation: live 2s ease-in-out infinite; }}
+    @keyframes live {{ 0%,100% {{ opacity: 1 }} 50% {{ opacity: .3 }} }}
     @media (prefers-reduced-motion: reduce) {{ * {{ animation: none !important; }} }}
   </style>
   <g clip-path="url(#frame)">
@@ -196,6 +250,7 @@ def hero():
   <g class="blink"><rect x="{px}" y="{y0-21}" width="11" height="26" rx="1.5" fill="{ACCENT}">
     <animate attributeName="x" dur="{cycle}s" repeatCount="indefinite"
       keyTimes="{ckt}" values="{cvals}"/></rect></g>
+  {''.join(hl_svg)}
   {''.join(chip_svg)}
 </svg>'''
     (OUT / "hero.svg").write_text(svg)
@@ -247,7 +302,7 @@ def impact():
   <defs><linearGradient id="ag" x1="0" x2="1"><stop offset="0" stop-color="{ACCENT}"/><stop offset="1" stop-color="{INDIGO}"/></linearGradient></defs>
   <style>
     .tile {{ animation: rise .9s cubic-bezier(.22,1,.36,1) both; }}
-    @keyframes rise {{ from {{ opacity: 0; transform: translateY(12px) }} to {{ opacity: 1; transform: none }} }}
+    @keyframes rise {{ from {{ transform: translateY(12px) }} to {{ transform: none }} }}
     .grow {{ transform-box: fill-box; transform-origin: left center; animation: grow 1.4s cubic-bezier(.22,1,.36,1) both; }}
     @keyframes grow {{ from {{ transform: scaleX(0) }} to {{ transform: scaleX(1) }} }}
     @media (prefers-reduced-motion: reduce) {{ * {{ animation: none !important; }} }}
