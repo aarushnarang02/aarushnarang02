@@ -13,6 +13,13 @@
 
 I'm drawn to problems where being right matters: a near miss at an intersection, a finding on a chest X-ray, a ticket that has been waiting since morning. I spent two years shipping production ML at **HCL Technologies**, presented a paper at **DEXA 2024** in Naples, and I'm now doing an **MS in Data Science at the University of Arizona** while working on applied ML at **Biosphere 2** and with **Amazon** through the Eller Immersion Project. I care more about honest evaluation than leaderboards.
 
+<p align="center">
+  <b>Open to full time roles from 2027</b><br /><br />
+  <img src="https://img.shields.io/badge/AI%2FML_Software_Engineer-0f172a?style=for-the-badge&logo=pytorch&logoColor=38bdf8" alt="AI/ML Software Engineer" />
+  <img src="https://img.shields.io/badge/Data_Scientist_%C2%B7_Data_Engineer-0f172a?style=for-the-badge&logo=databricks&logoColor=38bdf8" alt="Data Scientist, Data Engineer" />
+  <img src="https://img.shields.io/badge/Forward_Deployed_Engineer-0f172a?style=for-the-badge&logo=rocket&logoColor=38bdf8" alt="Forward Deployed Engineer" />
+</p>
+
 <img src="./assets/divider.svg" width="100%" alt="" />
 
 ### `$ now`
@@ -82,10 +89,6 @@ ship:          [Docker, GitHub Actions, Cloud Run, ECS Fargate, Azure App Servic
 <img src="./assets/divider.svg" width="100%" alt="" />
 
 <p align="center">
-  <b>Open to full time roles from 2027</b><br /><br />
-  <img src="https://img.shields.io/badge/AI%2FML_Software_Engineer-0f172a?style=for-the-badge&logo=pytorch&logoColor=38bdf8" alt="AI/ML Software Engineer" />
-  <img src="https://img.shields.io/badge/Data_Scientist_%C2%B7_Data_Engineer-0f172a?style=for-the-badge&logo=databricks&logoColor=38bdf8" alt="Data Scientist, Data Engineer" />
-  <img src="https://img.shields.io/badge/Forward_Deployed_Engineer-0f172a?style=for-the-badge&logo=rocket&logoColor=38bdf8" alt="Forward Deployed Engineer" /><br /><br />
   Happy to talk about retrieval, evaluation, computer vision, or anything where the model has to be right.<br /><br />
   <a href="https://aarush.work/#contact">Say hello →</a>
 </p>
