@@ -1,36 +1,91 @@
-<div style="width: 100%; text-align: center;">
-    <img src="https://static.wixstatic.com/media/6938a3_a9e5b58f1c674517ab862bd5680716d1~mv2.gif" alt="Coding" style="display: block; margin: 0 auto; width: 100%; height: auto;" />
-</div>
-<h1 align="center">A warm welcome to my Github profile!</h1>
-<div style="text-align: justify;">
-  <p style="margin: 0;">
-    👋 Hi there! I'm Aarush Narang, a passionate GenAI-Software Engineer with a knack for crafting efficient and scalable solutions. Dive into my projects and let's innovate together!
-  </p>
-</div>
-<br>
+<a href="https://aarush.work/">
+  <img src="./assets/hero.svg" width="100%" alt="Aarush Narang. Data Scientist and ML Engineer. I build production AI systems, computer vision models, Gen AI copilots, ML pipelines, and data driven solutions." />
+</a>
 
-
-- 🔭 I’m currently working as a Software Engineer - GenAI at HCL Technologies.
-
-- 🌱 I’m currently learning **langchain_huggingface**
-
-- 👯 I’m looking to collaborate on research papers focusing on LLMs or LVMs
-  
-- 💬 Ask me about **react and tailwind**
-
-- 📫 How to reach me **aarushnarang02@gmail.com**
-
-- 📄 Know about my experiences - linkedin.com/in/aarushnarang/
-
-- ⚡ Facts **I am here to stay**
-
-<h3 align="left">Connect with me:</h3>
-<p align="left">
-<a href="https://linkedin.com/in/aarushnarang" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="aarushnarang" height="30" width="40" /></a>
-<a href="https://instagram.com/aarushhnarang" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" alt="aarushhnarang" height="30" width="40" /></a>
-<a href="https://www.leetcode.com/aarushnarang" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/leet-code.svg" alt="aarushnarang" height="30" width="40" /></a>
+<p align="center">
+  <a href="https://aarush.work/"><img src="https://img.shields.io/badge/Portfolio-aarush.work-38bdf8?style=for-the-badge&labelColor=0f172a&logo=vercel&logoColor=38bdf8" alt="Portfolio" /></a>
+  <a href="https://www.linkedin.com/in/aarushnarang/"><img src="https://img.shields.io/badge/LinkedIn-aarushnarang-38bdf8?style=for-the-badge&labelColor=0f172a&logo=linkedin&logoColor=38bdf8" alt="LinkedIn" /></a>
+  <a href="mailto:aarushnarang@arizona.edu"><img src="https://img.shields.io/badge/Email-arizona.edu-38bdf8?style=for-the-badge&labelColor=0f172a&logo=gmail&logoColor=38bdf8" alt="Email" /></a>
+  <a href="https://link.springer.com/chapter/10.1007/978-3-031-68309-1_18"><img src="https://img.shields.io/badge/Paper-DEXA_2024-38bdf8?style=for-the-badge&labelColor=0f172a&logo=springer&logoColor=38bdf8" alt="DEXA 2024 paper" /></a>
+  <a href="https://x.com/aarushhnarang"><img src="https://img.shields.io/badge/X-aarushhnarang-38bdf8?style=for-the-badge&labelColor=0f172a&logo=x&logoColor=38bdf8" alt="X" /></a>
 </p>
 
-<h3 align="left">Languages and Tools:</h3>
-<p align="left"> <a href="https://getbootstrap.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg" alt="bootstrap" width="40" height="40"/> </a> <a href="https://www.w3schools.com/cpp/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg" alt="cplusplus" width="40" height="40"/> </a> <a href="https://www.w3schools.com/cs/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg" alt="csharp" width="40" height="40"/> </a> <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> </a> <a href="https://www.docker.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg" alt="docker" width="40" height="40"/> </a> <a href="https://dotnet.microsoft.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/dot-net/dot-net-original-wordmark.svg" alt="dotnet" width="40" height="40"/> </a> <a href="https://firebase.google.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg" alt="firebase" width="40" height="40"/> </a> <a href="https://golang.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/go/go-original.svg" alt="go" width="40" height="40"/> </a> <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </a> <a href="https://www.linux.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux" width="40" height="40"/> </a> <a href="https://www.mysql.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="mysql" width="40" height="40"/> </a> <a href="https://nextjs.org/" target="_blank" rel="noreferrer"> <img src="https://cdn.worldvectorlogo.com/logos/nextjs-2.svg" alt="nextjs" width="40" height="40"/> </a> <a href="https://nodejs.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" alt="nodejs" width="40" height="40"/> </a> <a href="https://pandas.pydata.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/2ae2a900d2f041da66e950e4d48052658d850630/icons/pandas/pandas-original.svg" alt="pandas" width="40" height="40"/> </a> <a href="https://www.python.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a> <a href="https://reactjs.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="40" height="40"/> </a> <a href="https://scikit-learn.org/" target="_blank" rel="noreferrer"> <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg" alt="scikit_learn" width="40" height="40"/> </a> <a href="https://tailwindcss.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg" alt="tailwind" width="40" height="40"/> </a> <a href="https://www.tensorflow.org" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/tensorflow/tensorflow-icon.svg" alt="tensorflow" width="40" height="40"/> </a> </p>
+<br />
 
+I'm drawn to problems where being right matters: a near miss at an intersection, a finding on a chest X-ray, a ticket that has been waiting since morning. I spent two years shipping production ML at **HCL Technologies**, presented a paper at **DEXA 2024** in Naples, and I'm now doing an **MS in Data Science at the University of Arizona** while working on applied ML at **Biosphere 2** and with **Amazon** through the Eller Immersion Project. I care more about honest evaluation than leaderboards.
+
+<img src="./assets/divider.svg" width="100%" alt="" />
+
+### `$ now`
+
+| where | what |
+|:---|:---|
+| **Amazon** · Eller Immersion Project | Forecasting weather driven delivery capacity loss **5 days ahead** at region level. Distributed lag logistic regression vs. an XGBoost / LightGBM / CatBoost ensemble with monotonic constraints and SHAP, walk forward backtests grouped by storm event, plus a simulation of the Return to Station re-induction cycle. |
+| **Biosphere 2** · AI/ML & Software Engineer | Sensor data quality layer in Oracle SQL over a **26 table** schema and **58 sensors**, tested on **10,000+** real readings, with edge telemetry traced from an in-farm Raspberry Pi (Tailscale, SSE, SQLite) to Spring Boot on AWS ECS Fargate. |
+| **University of Arizona** · MS Data Science | GPA 3.83 · graduating May 2027 |
+
+<img src="./assets/divider.svg" width="100%" alt="" />
+
+### `$ cat impact.log`
+
+<img src="./assets/impact.svg" width="100%" alt="Production ML at HCL Technologies: top 5 retrieval hit rate 89 percent, up from 74; daily service desk tickets down 26 percent, 2,300 to 1,700; MCP tool selection accuracy 94 percent over 120 golden tasks; incident resolution time down 76 percent, 105 to 25 minutes." />
+
+<details>
+<summary><b>How those numbers were built</b></summary>
+<br />
+
+- **RAG assistant** over 4,000+ SharePoint and ServiceNow files: Qwen3-Embedding, pgvector hybrid BM25 search, Qwen3-Reranker, heading aware 512 token chunks, measured on a 935 question labeled set.
+- **MCP server** for incident lookup, priority escalation and ticket reassignment, gated by unit and eval regression suites and shipped through GitHub Actions with zero downtime.
+- **Employee cost models** (Python, pandas, FastAPI, Azure SQL) within 7% MAPE of actual, running weekly on Azure App Service via Docker and Azure DevOps.
+- **Sales KPP** (React, C#, .NET, MS SQL Server) replacing manual Excel consolidation for HR, PMO and L2 leadership.
+
+</details>
+
+<img src="./assets/divider.svg" width="100%" alt="" />
+
+### `$ ls ./projects`
+
+<p align="center">
+  <a href="https://github.com/aarushnarang02/reflex"><img src="./assets/reflex.svg" width="49%" alt="Reflex: collision risk detection from traffic video. 94.4 percent vehicle detection F1, 87.6 percent near miss precision, 3.8 times faster with TensorRT." /></a>
+  <a href="https://github.com/aarushnarang02/radarmd"><img src="./assets/radarmd.svg" width="49%" alt="RadarMD: multi label chest X-ray triage across 14 pathologies. 0.84 mean AUROC, under 8 percent missed diagnoses, 4 times faster ONNX CPU inference." /></a>
+</p>
+
+**Research code**
+
+- [`valley-fever-patient-grouping`](https://github.com/aarushnarang02/valley-fever-patient-grouping): grouping Valley Fever patients by symptoms and social determinants with a mixed type latent class model, plus a permutation null that tests whether the groups are real.
+- [`autism-video-data-collection`](https://github.com/aarushnarang02/autism-video-data-collection): locating public video for autism research behind an auditable consent and licence gate. Metadata only, never downloads media.
+
+<img src="./assets/divider.svg" width="100%" alt="" />
+
+### `$ cat publication.bib`
+
+> **Analyzing the Efficacy of Large Language Models: A Comparative Study**
+> 35th International Conference on Database and Expert Systems Applications (**DEXA 2024**), Naples, Italy · Springer LNCS
+> [Read the paper →](https://link.springer.com/chapter/10.1007/978-3-031-68309-1_18)
+
+<img src="./assets/divider.svg" width="100%" alt="" />
+
+### `$ stack --list`
+
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=py,ts,java,go,cpp,cs,r,pytorch,tensorflow,sklearn,opencv,fastapi,react&theme=dark" alt="Python, TypeScript, Java, Go, C++, C#, R, PyTorch, TensorFlow, scikit-learn, OpenCV, FastAPI, React" /><br />
+  <img src="https://skillicons.dev/icons?i=nodejs,dotnet,tailwind,postgres,mysql,mongodb,docker,gcp,aws,azure,githubactions,linux,git&theme=dark" alt="Node.js, .NET, Tailwind, PostgreSQL, MySQL, MongoDB, Docker, GCP, AWS, Azure, GitHub Actions, Linux, Git" />
+</p>
+
+```yaml
+llm_systems:   [RAG, MCP, LangChain, Hugging Face, hybrid search, BM25, reranking, pgvector]
+vision:        [YOLO11, ByteTrack, MONAI, timm, Grad-CAM, ONNX, TensorRT]
+modeling:      [XGBoost, LightGBM, CatBoost, SHAP, PyTorch Lightning, Weights & Biases]
+data:          [PostgreSQL, Oracle, Azure SQL, Neo4j, Cassandra, HBase, SQLite]
+ship:          [Docker, GitHub Actions, Cloud Run, ECS Fargate, Azure App Service, Prometheus]
+```
+
+<img src="./assets/divider.svg" width="100%" alt="" />
+
+<p align="center">
+  <b>Open to ML and AI engineering internships and new grad roles for 2027.</b><br />
+  Happy to talk about retrieval, evaluation, computer vision, or anything where the model has to be right.<br /><br />
+  <a href="https://aarush.work/#contact">Say hello →</a>
+</p>
+
+<sub><p align="center">Every visual here is hand built SVG generated by <a href="./scripts/build_assets.py"><code>scripts/build_assets.py</code></a>, styled to match <a href="https://aarush.work/">aarush.work</a>.</p></sub>

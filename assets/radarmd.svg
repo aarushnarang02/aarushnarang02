@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="590" height="376" viewBox="0 0 590 376" role="img" aria-label="RadarMD: Multi label chest X-ray triage · 14 pathologies">
+  <title>RadarMD · Multi label chest X-ray triage · 14 pathologies</title>
+  <defs>
+    <linearGradient id="ag" x1="0" x2="1"><stop offset="0" stop-color="#38bdf8"/><stop offset="1" stop-color="#818cf8"/></linearGradient>
+    <clipPath id="sc"><rect x="16" y="16" width="558" height="150" rx="12"/></clipPath>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="3"/></filter>
+  </defs>
+  <style>
+    @media (prefers-reduced-motion: reduce) { * { animation: none !important; } }
+    
+    .cam { transform-box: fill-box; transform-origin: center; animation: cam 3.4s ease-in-out infinite; }
+    @keyframes cam { 0%,100% { opacity: .55; transform: scale(.9) } 50% { opacity: 1; transform: scale(1.06) } }
+    .scan { animation: scan 4.5s linear infinite; }
+    @keyframes scan { 0% { transform: translateY(-30px) } 100% { transform: translateY(160px) } }
+    .lab { animation: lab 4.9s ease-in-out infinite; }
+    @keyframes lab { 0%,100% { fill: #94a3b8 } 12% { fill: #38bdf8 } 30% { fill: #94a3b8 } }
+    
+  </style>
+  <rect x="0.5" y="0.5" width="589" height="375" rx="18" fill="#1e293b" stroke="#2d3b52"/>
+  <g clip-path="url(#sc)">
+    <rect x="16" y="16" width="558" height="150" fill="#05080f"/>
+    <defs>
+      <radialGradient id="cam" cx="0.5" cy="0.5" r="0.5">
+        <stop offset="0" stop-color="#ef4444" stop-opacity="0.85"/><stop offset="0.45" stop-color="#fbbf24" stop-opacity="0.45"/>
+        <stop offset="1" stop-color="#fbbf24" stop-opacity="0"/></radialGradient>
+      <radialGradient id="body" cx="0.5" cy="0.45" r="0.6"><stop offset="0" stop-color="#94a3b8" stop-opacity="0.22"/><stop offset="1" stop-color="#94a3b8" stop-opacity="0"/></radialGradient>
+      <linearGradient id="scan" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#38bdf8" stop-opacity="0"/><stop offset="1" stop-color="#38bdf8" stop-opacity="0.5"/></linearGradient>
+    </defs>
+    <ellipse cx="200" cy="98" rx="130" ry="80" fill="url(#body)"/>
+    <path d="M186,40 C120,34 96,90 104,150 L180,150 C186,110 188,70 186,40Z" fill="#cbd5e1" fill-opacity="0.07" stroke="#cbd5e1" stroke-opacity="0.35"/>
+    <path d="M214,40 C280,34 304,90 296,150 L220,150 C214,110 212,70 214,40Z" fill="#cbd5e1" fill-opacity="0.07" stroke="#cbd5e1" stroke-opacity="0.35"/>
+    <g fill="none" stroke="#e2e8f0" stroke-opacity="0.28" stroke-width="2.2" stroke-linecap="round"><path d="M194,44 C165.0,34 130,46 124,62"/><path d="M206,44 C235.0,34 270,46 276,62"/><path d="M194,61 C162.0,51 124,63 118,79"/><path d="M206,61 C238.0,51 276,63 282,79"/><path d="M194,78 C159.0,68 118,80 112,96"/><path d="M206,78 C241.0,68 282,80 288,96"/><path d="M194,95 C156.0,85 112,97 106,113"/><path d="M206,95 C244.0,85 288,97 294,113"/><path d="M194,112 C153.0,102 106,114 100,130"/><path d="M206,112 C247.0,102 294,114 300,130"/><path d="M194,129 C150.0,119 100,131 94,147"/><path d="M206,129 C250.0,119 300,131 306,147"/></g>
+    <rect x="196" y="24" width="8" height="140" rx="3" fill="#e2e8f0" fill-opacity="0.18"/>
+    <ellipse cx="252" cy="114" rx="38" ry="30" fill="url(#cam)" class="cam"/>
+    <rect x="220" y="86" width="66" height="54" fill="none" stroke="#38bdf8" stroke-width="1.4" stroke-dasharray="5 4"/>
+    <rect x="220" y="72" width="58" height="13" fill="#38bdf8"/>
+    <text x="225" y="82" font-family="'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="9" font-weight="700" fill="#05080f">GT box</text>
+    <rect x="16" y="16" width="558" height="26" fill="url(#scan)" class="scan"/>
+    <line x1="352" y1="28" x2="352" y2="156" stroke="#2d3b52"/>
+    <text x="372" y="44" font-family="'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="10" fill="#94a3b8" class="lab" style="animation-delay:0.00s">Atelectasis</text><text x="372" y="60" font-family="'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="10" fill="#94a3b8" class="lab" style="animation-delay:0.35s">Cardiomegaly</text><text x="372" y="76" font-family="'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="10" fill="#94a3b8" class="lab" style="animation-delay:0.70s">Effusion</text><text x="372" y="92" font-family="'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="10" fill="#94a3b8" class="lab" style="animation-delay:1.05s">Infiltration</text><text x="372" y="108" font-family="'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="10" fill="#94a3b8" class="lab" style="animation-delay:1.40s">Mass</text><text x="372" y="124" font-family="'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="10" fill="#94a3b8" class="lab" style="animation-delay:1.75s">Nodule</text><text x="372" y="140" font-family="'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="10" fill="#94a3b8" class="lab" style="animation-delay:2.10s">Pneumonia</text>
+    <text x="372" y="156" font-family="'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="10" fill="#38bdf8">+ 7 more labels</text>
+    <text x="30" y="156" font-family="'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="10" fill="#94a3b8">Grad-CAM vs ground truth</text></g>
+  <rect x="16.5" y="16.5" width="557" height="149" rx="12" fill="none" stroke="#2d3b52"/>
+  <text x="566" y="204" text-anchor="end" font-family="'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="10.5" letter-spacing="1.5" fill="#94a3b8">MEDICAL IMAGING</text>
+  <text x="24" y="206" font-family="'Space Grotesk','Segoe UI',Ubuntu,'Helvetica Neue',Arial,sans-serif" font-size="28" font-weight="700" fill="#e2e8f0">RadarMD</text>
+  <text x="24" y="234" font-family="'Inter','Segoe UI',Ubuntu,'Helvetica Neue',Arial,sans-serif" font-size="14" fill="#cbd5e1">Multi label chest X-ray triage · 14 pathologies</text>
+  <rect x="24.0" y="262" width="172.7" height="64" rx="10" fill="#0f172a" stroke="#2d3b52"/><text x="38.0" y="292" font-family="'Space Grotesk','Segoe UI',Ubuntu,'Helvetica Neue',Arial,sans-serif" font-size="22" font-weight="700" fill="url(#ag)">0.84 AUROC</text><text x="38.0" y="313" font-family="'Inter','Segoe UI',Ubuntu,'Helvetica Neue',Arial,sans-serif" font-size="11.5" fill="#94a3b8">mean · +6 pts over baseline</text><rect x="208.7" y="262" width="172.7" height="64" rx="10" fill="#0f172a" stroke="#2d3b52"/><text x="222.7" y="292" font-family="'Space Grotesk','Segoe UI',Ubuntu,'Helvetica Neue',Arial,sans-serif" font-size="22" font-weight="700" fill="url(#ag)">&lt;8%</text><text x="222.7" y="313" font-family="'Inter','Segoe UI',Ubuntu,'Helvetica Neue',Arial,sans-serif" font-size="11.5" fill="#94a3b8">missed diagnoses</text><rect x="393.3" y="262" width="172.7" height="64" rx="10" fill="#0f172a" stroke="#2d3b52"/><text x="407.3" y="292" font-family="'Space Grotesk','Segoe UI',Ubuntu,'Helvetica Neue',Arial,sans-serif" font-size="22" font-weight="700" fill="url(#ag)">4× faster</text><text x="407.3" y="313" font-family="'Inter','Segoe UI',Ubuntu,'Helvetica Neue',Arial,sans-serif" font-size="11.5" fill="#94a3b8">ONNX CPU · ~120 ms/image</text>
+  <text x="24" y="356" font-family="'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="11" fill="#38bdf8" fill-opacity="0.85">PyTorch Lightning · DenseNet-121 · ConvNeXt · MONAI · ONNX · Cloud Run</text>
+</svg>
