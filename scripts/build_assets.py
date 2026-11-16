@@ -75,10 +75,34 @@ def logo_tile(name, x, y, size):
     )
 
 
+def moon_svg(x, y, r):
+    """The portfolio's hero moon: a real lunar photo clipped to a disc with a
+    soft cool halo. Photo: Gregory H. Revera, CC BY-SA 3.0 (credited in the
+    banner). Embedded as base64 because README SVGs cannot load URLs."""
+    import base64
+    b64 = base64.b64encode((LOGOS / "moon.jpg").read_bytes()).decode()
+    o = r * 0.04  # slight overscan so the photo edge meets the clip cleanly
+    return f'''<radialGradient id="moonHalo" gradientUnits="userSpaceOnUse" cx="{x}" cy="{y}" r="{r*2.1:.1f}">
+      <stop offset="{0.85/2.1:.3f}" stop-color="rgb(186,210,245)" stop-opacity="0.16"/>
+      <stop offset="1" stop-color="rgb(186,210,245)" stop-opacity="0"/></radialGradient>
+    <radialGradient id="moonLimb" gradientUnits="userSpaceOnUse" cx="{x - r*0.25:.1f}" cy="{y - r*0.25:.1f}" r="{r*1.35:.1f}">
+      <stop offset="0.55" stop-color="#0b1020" stop-opacity="0"/>
+      <stop offset="1" stop-color="#0b1020" stop-opacity="0.55"/></radialGradient>
+    <clipPath id="moonClip"><circle cx="{x}" cy="{y}" r="{r}"/></clipPath>
+    <circle cx="{x}" cy="{y}" r="{r*2.1:.1f}" fill="url(#moonHalo)" class="halo"/>
+    <g clip-path="url(#moonClip)">
+      <image x="{x-r-o:.1f}" y="{y-r-o:.1f}" width="{2*(r+o):.1f}" height="{2*(r+o):.1f}" href="data:image/jpeg;base64,{b64}"/>
+      <circle cx="{x}" cy="{y}" r="{r}" fill="url(#moonLimb)"/>
+    </g>
+    <text x="{x}" y="{y + r + 30:.0f}" text-anchor="middle" font-family="{MONO}" font-size="8.5" fill="{MUTED}" fill-opacity="0.55">Moon · G. H. Revera · CC BY-SA 3.0</text>'''
+
+
 # --------------------------------------------------------------------------- hero
 def hero():
-    W, H = 1200, 432
-    hl_y, chip_y = 292, 374
+    W, H = 1200, 510
+    hl_y, chip_y = 338, 422
+    # moon, after the hero moon on aarush.work (top right, cool halo)
+    mx, my, mr = 1078, 142, 60
     rng = random.Random(7)
     stars = starfield(rng, W, H, 170)
 
@@ -91,7 +115,7 @@ def hero():
         "data-driven solutions.",
     ]
     fs, cw = 24, 14.4  # mono font size and forced per-char advance (textLength)
-    x0, y0 = 64, 262
+    x0, y0 = 64, 302
     prefix = "I build "
     px = x0 + len(prefix) * cw
     slot, t_type, t_hold, t_erase = 3.8, 1.3, 1.9, 0.45
@@ -126,7 +150,7 @@ def hero():
 
     # Constellation that doubles as a small neural net.
     layers = [3, 5, 5, 3, 1]
-    nx0, nx1, ny0, ny1 = 820, 1130, 70, 290
+    nx0, nx1, ny0, ny1 = 650, 950, 92, 302
     nodes = []
     for li, n in enumerate(layers):
         x = nx0 + (nx1 - nx0) * li / (len(layers) - 1)
@@ -222,6 +246,8 @@ def hero():
     .rise {{ animation: rise 1.1s cubic-bezier(.22,1,.36,1) both; }}
     @keyframes rise {{ from {{ transform: translateY(14px) }} to {{ transform: none }} }}
     .live {{ animation: live 2s ease-in-out infinite; }}
+    .halo {{ animation: halo 7s ease-in-out infinite; }}
+    @keyframes halo {{ 0%,100% {{ opacity: .75 }} 50% {{ opacity: 1 }} }}
     @keyframes live {{ 0%,100% {{ opacity: 1 }} 50% {{ opacity: .3 }} }}
     @media (prefers-reduced-motion: reduce) {{ * {{ animation: none !important; }} }}
   </style>
@@ -236,14 +262,15 @@ def hero():
     </g>
     {''.join(pulses)}
     {node_svg}
-    <text x="{W-40}" y="44" text-anchor="end" font-family="{MONO}" font-size="11" fill="{MUTED}" letter-spacing="2">PERCEIVE · RETRIEVE · REASON · SHIP</text>
+    {moon_svg(mx, my, mr)}
+    <text x="{W-40}" y="{H-24}" text-anchor="end" font-family="{MONO}" font-size="11" fill="{MUTED}" letter-spacing="2">PERCEIVE · RETRIEVE · REASON · SHIP</text>
   </g>
   <rect x="0.5" y="0.5" width="{W-1}" height="{H-1}" rx="20" fill="none" stroke="{BORDER}"/>
 
   <g class="rise">
-    <text x="{x0}" y="92" font-family="{MONO}" font-size="15" fill="{ACCENT}" fill-opacity="0.85">~/aarush <tspan fill="{MUTED}">$</tspan> whoami</text>
-    <text x="{x0-3}" y="168" font-family="{DISPLAY}" font-size="72" font-weight="700" letter-spacing="-1.5" fill="url(#nameGrad)">Aarush Narang</text>
-    <text x="{x0}" y="210" font-family="{DISPLAY}" font-size="25" font-weight="500" fill="{TEXT}">Data Scientist &amp; ML Engineer</text>
+    <text x="{x0}" y="114" font-family="{MONO}" font-size="15" fill="{ACCENT}" fill-opacity="0.85">~/aarush <tspan fill="{MUTED}">$</tspan> whoami</text>
+    <text x="{x0-3}" y="196" font-family="{DISPLAY}" font-size="72" font-weight="700" letter-spacing="-1.5" fill="url(#nameGrad)">Aarush Narang</text>
+    <text x="{x0}" y="240" font-family="{DISPLAY}" font-size="25" font-weight="500" fill="{TEXT}">Data Scientist &amp; ML Engineer</text>
   </g>
   <text x="{x0}" y="{y0}" textLength="{len(prefix)*cw - cw*0.4:.1f}" lengthAdjust="spacingAndGlyphs" font-family="{MONO}" font-size="{fs}" fill="{MUTED}">I build</text>
   {''.join(texts)}
