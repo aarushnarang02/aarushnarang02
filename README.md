@@ -22,6 +22,12 @@ I'm drawn to problems where being right matters: a near miss at an intersection,
 
 <img src="./assets/divider.svg" width="100%" alt="" />
 
+### `$ ./intro`
+
+https://github.com/user-attachments/assets/d8bf38be-1078-415a-a337-542ccb5f81ea
+
+<img src="./assets/divider.svg" width="100%" alt="" />
+
 ### `$ now`
 
 | where | what |
