@@ -20,7 +20,7 @@ https://github.com/user-attachments/assets/e7bb3b95-3450-4da2-98f2-265b63389cbb
 I'm drawn to problems where being right matters: a near miss at an intersection, a finding on a chest X-ray, a ticket that has been waiting since morning. I spent two years shipping production ML at **HCL Technologies**, presented a paper at **DEXA 2024** in Naples, and I'm now doing an **MS in Data Science at the University of Arizona** while working on applied ML at **Biosphere 2** and with **Amazon** through the Eller Immersion Project. I care more about honest evaluation than leaderboards.
 
 <p align="center">
-  <b>Open to full time roles from 2027</b><br /><br />
+  <b>Open to full time roles from May 2027</b><br /><br />
   <img src="https://img.shields.io/badge/AI%2FML_Software_Engineer-0f172a?style=for-the-badge&logo=pytorch&logoColor=38bdf8" alt="AI/ML Software Engineer" />
   <img src="https://img.shields.io/badge/Data_Scientist_%C2%B7_Data_Engineer-0f172a?style=for-the-badge&logo=databricks&logoColor=38bdf8" alt="Data Scientist, Data Engineer" />
   <img src="https://img.shields.io/badge/Forward_Deployed_Engineer-0f172a?style=for-the-badge&logo=rocket&logoColor=38bdf8" alt="Forward Deployed Engineer" />
