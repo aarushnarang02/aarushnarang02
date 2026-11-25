@@ -15,6 +15,10 @@
 
 https://github.com/user-attachments/assets/e7bb3b95-3450-4da2-98f2-265b63389cbb
 
+<p align="center">
+  <a href="https://github.com/user-attachments/assets/e7bb3b95-3450-4da2-98f2-265b63389cbb">▶ Watch the 40 second intro</a>
+</p>
+
 <img src="./assets/divider.svg" width="100%" alt="" />
 
 I'm drawn to problems where being right matters: a near miss at an intersection, a finding on a chest X-ray, a ticket that has been waiting since morning. I spent two years shipping production ML at **HCL Technologies**, presented a paper at **DEXA 2024** in Naples, and I'm now doing an **MS in Data Science at the University of Arizona** while working on applied ML at **Biosphere 2** and with **Amazon** through the Eller Immersion Project. I care more about honest evaluation than leaderboards.
